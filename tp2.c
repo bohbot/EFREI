@@ -1,3 +1,8 @@
+/*
+Il reste a faire:
+modifier la structure film et remplacer le nom des acteurs et des realisateurs par leurs id
+ajouter les fonctions créer, modifier et supprimer un film, 
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
