@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <tchar.h>
-#include "fonctions.h"
+#include "fonction.h"
 
 enum genres
 {

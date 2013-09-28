@@ -12,7 +12,7 @@ typedef enum genres
 	drame,
 	animation,
 	science_fiction
-} Genres;
+} genres;
 
 typedef struct film
 {
@@ -24,7 +24,7 @@ typedef struct film
 	int duree;
 	genres genre1;
 	genres genre2;
-} Film;
+} film;
 
 typedef struct realisateur
 {
@@ -32,7 +32,7 @@ typedef struct realisateur
 	char prenom[40];
 	int date_naissance;
 	char nationalite[20];
-} Realisateur;
+} realisateur;
 
 typedef struct acteur
 {
@@ -40,9 +40,9 @@ typedef struct acteur
 	char prenom[40];
 	int date_naissance;
 	char nationalite[20];
-} Acteur;
+} acteur;
 
-void affiche_film( Film* );
-void affiche_realisateur( Realisateur* );
-void affiche_acteur( Acteur* );
-void recherche_film( Film[], int, char );
+void affiche_film( film* );
+void affiche_realisateur( realisateur* );
+void affiche_acteur( acteur* );
+void recherche_film( film[], int, char );
