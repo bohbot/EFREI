@@ -1,4 +1,5 @@
-#include "stdafx.h"
+#include <stdio.h>
+#include <tchar.h>
 #include "fonctions.h"
 
 enum genres

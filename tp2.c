@@ -1,9 +1,8 @@
 // TP2.cpp : définit le point d'entrée pour l'application console.
 
-#include "stdafx.h"
-
-
-
+#include <stdio.h>
+#include <tchar.h>
+#include "fonctions.h"
 
 int _tmain(int argc, _TCHAR* argv[])
 {

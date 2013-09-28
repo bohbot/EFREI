@@ -1,5 +1,7 @@
 
-#include "stdafx.h"
+#include <stdio.h>
+#include <tchar.h>
+#include "fonctions.h"
 
 void affiche_film( Film* ptr_film )
 {
