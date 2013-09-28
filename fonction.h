@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <tchar.h>
-#include <stdlib.h>
+#ifndef fonction.h
+#define fonction.h
 
 typedef enum genres
 {
@@ -12,7 +13,7 @@ typedef enum genres
 	drame,
 	animation,
 	science_fiction
-} genres;
+} Genres;
 
 typedef struct film
 {
@@ -20,29 +21,43 @@ typedef struct film
 	char titre[40];
 	int annee;
 	char nom_realisateur[40];
-	char nom_acteur[40];
+	char nom_acteur1[40];
+	char nom_acteur2[40];
+	char nom_acteur3[40];
+	char nom_acteur4[40];
 	int duree;
 	genres genre1;
 	genres genre2;
-} film;
+} Film;
 
 typedef struct realisateur
 {
+	int id_realisateur;
 	char nom[40];
 	char prenom[40];
-	int date_naissance;
+	int jour_naissance;
+	char mois_naissance[40];
+	int annee_naissance;
 	char nationalite[20];
-} realisateur;
+} Realisateur;
 
 typedef struct acteur
 {
+	int id_acteur;
 	char nom[40];
 	char prenom[40];
-	int date_naissance;
+	int jour_naissance;
+	char mois_naissance[40];
+	int annee_naissance;
 	char nationalite[20];
-} acteur;
+} Acteur;
 
-void affiche_film( film* );
-void affiche_realisateur( realisateur* );
-void affiche_acteur( acteur* );
-void recherche_film( film[], int, char );
+void affiche_film( Film* );
+void affiche_realisateur( Realisateur* );
+void affiche_acteur( Acteur* );
+void recherche_film( Film, int, char );
+void affiche_filmographie_acteur( Film, int, char );
+void affiche_filmographie_realisateur( Film, int, char );
+void affiche_genre( int );
+
+#endif
